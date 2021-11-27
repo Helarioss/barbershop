@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbershop</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- DESKTOP MENU -->
+      <div class="header__container container">
+        <nav class="header__nav">
+          <a class="link" href="" class="logo">
+            <svg width="69" height="56">
+              <use href="./images/icons/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="header__menu list">
+            <li class="header__menu-item">
+              <a class="header__menu-link link" href="">О нас</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link link" href="">Услуги и цены</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link link" href="">Мастера</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__contacts list">
+          <li class="header__contacts-item">
+            <a class="header__contacts-link link" href="">+38 044 111 11 11</a>
+          </li>
+          <li class="header__contacts-item">
+            <a class="header__contacts-link link" href="">онлайн-запись</a>
+          </li>
+        </ul>
+
+        <button class="btn-icon btn-open-menu js-open-menu">
+          <svg width="40" height="40">
+            <use href="./images/icons/sprite.svg#menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- END DESKTOP MENU -->
+
+      <!-- MOBILE MENU -->
+      <div class="backdrop js-menu-container">
+        <div class="mobile-menu js-menu-container">
+          <button
+            class="
+              mobile-menu__btn-close-menu
+              btn-icon btn-close-menu
+              js-close-menu
+            "
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons/sprite.svg#menu-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu__menu list">
+            <li class="mobile-menu__menu-item">
+              <a class="mobile-menu__menu-link link" href="">О нас</a>
+            </li>
+            <li class="mobile-menu__menu-item">
+              <a class="mobile-menu__menu-link link" href="">Услуги и цены</a>
+            </li>
+            <li class="mobile-menu__menu-item">
+              <a class="mobile-menu__menu-link link" href="">Мастера</a>
+            </li>
+            <li class="mobile-menu__menu-item">
+              <a class="mobile-menu__menu-link link" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="mobile-menu__contacts">
+            <a
+              class="
+                mobile-menu__contacts-item mobile-menu__contacts-phone
+                link
+              "
+              href="tel:+380441111111"
+              >+38 044 111 11 11</a
+            >
+            <a
+              class="mobile-menu__contacts-item mobile-menu__contacts-btn link"
+              href=""
+              >онлайн-запись</a
+            >
+          </div>
+
+          
+            <ul class="mobile-menu__social list">
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Instagram</a>
+              </li>
+              <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">Youtube</a>
+              </li>
+            </ul>
+
+      </div>
+      <!-- END MOBILE MENU -->
+    </header>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
