@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background-color: teal;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+}
+
+// Menu
+.header__menu {
+  display: none;
+}
+
+.header__menu-item {
+}
+
+.header__menu-link {
+}
+
+// Contacts
+.header__contacts {
+  display: none;
+}
+
+.header__contacts-item {
+}
+
+.header__contacts-link {
+}
