@@ -1,38 +1,123 @@
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
 
-  background-color: teal;
+  background-color: transparent;
+  z-index: 3;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+  }
+}
+
+.header__btn-open-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 // Menu
 .header__menu {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
-.header__menu-item {
+.header__menu-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .header__menu-link {
+  display: block;
+  padding: 22px 0px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
 }
 
 // Contacts
 .header__contacts {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 11px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+  }
 }
 
-.header__contacts-item {
+.header__contacts-item:first-child {
+  @media screen and (max-width: 1199px) {
+    order: 1;
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+  }
 }
 
 .header__contacts-link {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  color: #fff;
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
+}
+
+.header__contacts-btn {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 8px;
+  }
 }

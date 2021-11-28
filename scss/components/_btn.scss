@@ -1,8 +1,46 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+
+  padding-left: 37px;
+  padding-right: 37px;
+
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+}
+
+.btn--light {
+  color: #fff;
+}
+.btn--dark {
+  color: #303030;
+}
+
 .btn-icon {
   line-height: 0;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: #ff6c00;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
 }
 .btn-open-menu {
+  color: #fff;
 }
 
 .btn-close-menu {

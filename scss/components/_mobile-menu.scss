@@ -17,7 +17,10 @@
 
   background-color: #fff;
 
-  @media screen and (min-width: 480px) {
+  transition: transform 250ms ease-in;
+
+  .backdrop--open > & {
+    transform: translateX(0);
   }
 }
 
@@ -71,22 +74,6 @@
   &:focus {
     color: #ff6c00;
   }
-}
-.mobile-menu__contacts-btn {
-  display: inline-block;
-  padding: 12px 37px;
-
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-
-  color: #303030;
-  background-color: transparent;
 }
 
 // Social
