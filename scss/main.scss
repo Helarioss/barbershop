@@ -4,6 +4,7 @@
 
 //COMPONENTS
 @import './components/container';
+@import './components/section';
 @import './components/btn';
 @import './components/backdrop';
 @import './components/mobile-menu';
@@ -12,3 +13,6 @@
 // LAYOUT
 @import './layout/header';
 @import './layout/hero';
+@import './layout/about';
+@import './layout/prices';
+@import './layout/features';

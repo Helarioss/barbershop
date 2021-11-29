@@ -16,7 +16,14 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
+  text-decoration: none;
   background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: #ff6c00;
+  }
 }
 
 .btn--light {
