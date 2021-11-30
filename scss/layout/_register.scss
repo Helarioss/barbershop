@@ -1,0 +1,77 @@
+.register {
+  background-color: #191c26;
+}
+
+.register__container {
+  width: 100%;
+  //   @media screen and (min-width: 1280px) {
+  //     width: 50%;
+  //   }
+}
+
+.register__title {
+  margin-bottom: 44px;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    align-items: flex-start;
+  }
+}
+
+.register__info {
+  width: 100%;
+  margin-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.register__input,
+.register__input-message {
+  display: block;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  border: none;
+  border-bottom: 1px solid currentColor;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+
+  color: rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  outline: none;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.register__input:not(:last-child) {
+  margin-bottom: 44px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
+.register__input-message {
+  height: 76px;
+  resize: none;
+
+  margin-bottom: 44px;
+}

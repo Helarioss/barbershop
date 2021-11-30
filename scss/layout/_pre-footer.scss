@@ -1,0 +1,8 @@
+.pre-footer {
+  margin: 0 auto;
+  max-width: 1280px;
+  @media screen and (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
